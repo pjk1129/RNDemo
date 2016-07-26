@@ -1,0 +1,18 @@
+platform :ios, ‘8.0’
+
+pod 'SDWebImage', '~> 3.8.1'
+pod 'AFNetworking', '~> 3.1.0'
+pod 'React', '~> 0.13.0-rc'
+pod 'React/Core', '~> 0.13.0-rc'
+pod 'React/ART', '~> 0.13.0-rc'
+pod 'React/RCTActionSheet', '~> 0.13.0-rc'
+pod 'React/RCTAdSupport', '~> 0.13.0-rc'
+pod 'React/RCTGeolocation', '~> 0.13.0-rc'
+pod 'React/RCTImage', '~> 0.13.0-rc'
+pod 'React/RCTNetwork', '~> 0.13.0-rc'
+pod 'React/RCTPushNotification', '~> 0.13.0-rc'
+pod 'React/RCTSettings', '~> 0.13.0-rc'
+pod 'React/RCTText', '~> 0.13.0-rc'
+pod 'React/RCTVibration', '~> 0.13.0-rc'
+pod 'React/RCTWebSocket', '~> 0.13.0-rc'
+pod 'React/RCTLinkingIOS', '~> 0.13.0-rc'

@@ -1,0 +1,72 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - React (0.13.0-rc):
+    - React/Core (= 0.13.0-rc)
+  - React/ART (0.13.0-rc):
+    - React/Core
+  - React/Core (0.13.0-rc)
+  - React/RCTActionSheet (0.13.0-rc):
+    - React/Core
+  - React/RCTAdSupport (0.13.0-rc):
+    - React/Core
+  - React/RCTGeolocation (0.13.0-rc):
+    - React/Core
+  - React/RCTImage (0.13.0-rc):
+    - React/Core
+    - React/RCTNetwork
+  - React/RCTLinkingIOS (0.13.0-rc):
+    - React/Core
+  - React/RCTNetwork (0.13.0-rc):
+    - React/Core
+  - React/RCTPushNotification (0.13.0-rc):
+    - React/Core
+  - React/RCTSettings (0.13.0-rc):
+    - React/Core
+  - React/RCTText (0.13.0-rc):
+    - React/Core
+  - React/RCTVibration (0.13.0-rc):
+    - React/Core
+  - React/RCTWebSocket (0.13.0-rc):
+    - React/Core
+  - SDWebImage (3.8.1):
+    - SDWebImage/Core (= 3.8.1)
+  - SDWebImage/Core (3.8.1)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.1.0)
+  - React (~> 0.13.0-rc)
+  - React/ART (~> 0.13.0-rc)
+  - React/Core (~> 0.13.0-rc)
+  - React/RCTActionSheet (~> 0.13.0-rc)
+  - React/RCTAdSupport (~> 0.13.0-rc)
+  - React/RCTGeolocation (~> 0.13.0-rc)
+  - React/RCTImage (~> 0.13.0-rc)
+  - React/RCTLinkingIOS (~> 0.13.0-rc)
+  - React/RCTNetwork (~> 0.13.0-rc)
+  - React/RCTPushNotification (~> 0.13.0-rc)
+  - React/RCTSettings (~> 0.13.0-rc)
+  - React/RCTText (~> 0.13.0-rc)
+  - React/RCTVibration (~> 0.13.0-rc)
+  - React/RCTWebSocket (~> 0.13.0-rc)
+  - SDWebImage (~> 3.8.1)
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  React: 954f9c87235fcba91eac21d2632e1227a7336839
+  SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
+
+COCOAPODS: 0.39.0
