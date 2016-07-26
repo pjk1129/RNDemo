@@ -255,3 +255,4 @@ curl http://localhost:8081/ReactComponent/home.ios.bundle -o main.jsbundle
 启动完成之后可以通过：http://localhost:8081/ReactComponent/home.ios.bundle进行调用
 
 
+
