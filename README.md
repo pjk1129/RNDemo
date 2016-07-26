@@ -79,9 +79,8 @@ It's worth noting that we're not chasing “write once, run anywhere.” Differe
 ####touch ReactComponent/home.ios.js
 
 ####home.ios.js文件内容，示例如下：
-#####'use strict';
-
-#####import React, {
+    'use strict';
+    import React, {
             AppRegistry,
             Component,
             StyleSheet,
@@ -90,11 +89,10 @@ It's worth noting that we're not chasing “write once, run anywhere.” Differe
             View,
             ListView,
             Image,
-} from 'react-native'
+    } from 'react-native'
 
-#####var BASE_URL = 'https://api.github.com/search/repositories?q='
-
-#####export default class RNDemo extends React.Component {
+    var BASE_URL = 'https://api.github.com/search/repositories?q='
+    export default class RNDemo extends React.Component {
             constructor(props) {
                  super(props);
                  this.state = {
@@ -102,24 +100,9 @@ It's worth noting that we're not chasing “write once, run anywhere.” Differe
                          rowHasChanged: (row1, row2) => row1 !== row2,
                     })
                  };
-}
+    }
 
-#####render() {
-            return (
-              <View style={styles.container}>
-                 <TextInput
-                     autoCapitalize='none'
-                     autoCorrect={false}
-                     placeholder='Search for a projext...'
-                     style={styles.searchBarInput}
-                     onEndEditing={e=>this.handleSearchChange(e)}>
-                 </TextInput>
-                 {this.renderListView()}
-              </View>
-            );
- }
-
-#####renderListView() {
+    renderListView() {
               var content
               if (this.state.dataSource.getRowCount() === 0) {
                  content = (
@@ -135,9 +118,8 @@ It's worth noting that we're not chasing “write once, run anywhere.” Differe
                      )
                }
               return content
- }
- 
-##### renderRow(repo) {
+     }
+     renderRow(repo) {
               return (
                   <View>
                      <View style={styles.row}>
@@ -153,10 +135,10 @@ It's worth noting that we're not chasing “write once, run anywhere.” Differe
                        <View style={styles.cellBorder} />
                   </View>
               )
- }
+       }
 
-##### // action
-##### handleSearchChange(e) {
+      // action
+      handleSearchChange(e) {
               var searchTerm = e.nativeEvent.text.toLowerCase()
               var queryURL = BASE_URL + encodeURIComponent(searchTerm)
               fetch(queryURL)
@@ -171,58 +153,57 @@ It's worth noting that we're not chasing “write once, run anywhere.” Differe
                  })
                 .done()
              }
-}
+       }
 
-#####var styles = StyleSheet.create({
+     var styles = StyleSheet.create({
        container: {
           flex: 1,
           backgroundColor: 'white',
        },
-      listView: {
+       listView: {
         // flex: 1,
-      },
-      searchBarInput: {
+       },
+       searchBarInput: {
            marginTop: 30,
            padding: 10,
            fontSize: 12,
            height: 30,
            backgroundColor: '#EAEAEA',
-       },
-     row: {
+        },
+        row: {
            width: 200,
            alignItems: 'center',
            backgroundColor: 'white',
            flexDirection: 'row',
            padding: 5,
-      },
-// cell
-
-       profpic: {
+        },
+      // cell
+        profpic: {
             width: 50,
             height: 50,
-        },
-        title: {
+         },
+         title: {
              fontSize: 20,
              marginBottom: 8,
              fontWeight: 'bold',
-         },
-        subTile: {
+          },
+          subTile: {
               fontSize: 16,
               marginBottom: 8,
-        },
-        textContainer: {
+          },
+          textContainer: {
               paddingLeft: 10,
-         },
-        cellBorder: {
+          },
+          cellBorder: {
               backgroundColor: 'rgba(0, 0, 0, 0.1)',
               height: 1,
               marginLeft: 4,
-         },
-         blankText: {
+          },
+          blankText: {
               padding: 10,
               fontSize: 20,
           },
-})
+    })
 
 #####React.AppRegistry.registerComponent('RNDemo', () => RNDemo);
 
