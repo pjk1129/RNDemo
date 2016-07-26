@@ -53,20 +53,20 @@ ok，按照以上步骤，你应该已经配置好了环境。
 
 ###3.修改Podfile配置
 在项目根目录下的Podfile（如果没有该文件可以使用pod init命令生成）文件中加入如下代码：
-    pod 'React', '~> 0.13.0-rc'
-    pod 'React/Core', '~> 0.13.0-rc'
-    pod 'React/ART', '~> 0.13.0-rc'
-    pod 'React/RCTActionSheet', '~> 0.13.0-rc'
-    pod 'React/RCTAdSupport', '~> 0.13.0-rc'
-    pod 'React/RCTGeolocation', '~> 0.13.0-rc'
-    pod 'React/RCTImage', '~> 0.13.0-rc'
-    pod 'React/RCTNetwork', '~> 0.13.0-rc'
-    pod 'React/RCTPushNotification', '~> 0.13.0-rc'
-    pod 'React/RCTSettings', '~> 0.13.0-rc'
-    pod 'React/RCTText', '~> 0.13.0-rc'
-    pod 'React/RCTVibration', '~> 0.13.0-rc'
-    pod 'React/RCTWebSocket', '~> 0.13.0-rc'
-    pod 'React/RCTLinkingIOS', '~> 0.13.0-rc'
+     pod 'React', '~> 0.13.0-rc'
+     pod 'React/Core', '~> 0.13.0-rc'
+     pod 'React/ART', '~> 0.13.0-rc'
+     pod 'React/RCTActionSheet', '~> 0.13.0-rc'
+     pod 'React/RCTAdSupport', '~> 0.13.0-rc'
+     pod 'React/RCTGeolocation', '~> 0.13.0-rc'
+     pod 'React/RCTImage', '~> 0.13.0-rc'
+     pod 'React/RCTNetwork', '~> 0.13.0-rc'
+     pod 'React/RCTPushNotification', '~> 0.13.0-rc'
+     pod 'React/RCTSettings', '~> 0.13.0-rc'
+     pod 'React/RCTText', '~> 0.13.0-rc'
+     pod 'React/RCTVibration', '~> 0.13.0-rc'
+     pod 'React/RCTWebSocket', '~> 0.13.0-rc'
+     pod 'React/RCTLinkingIOS', '~> 0.13.0-rc'
 
 如果你在项目中使用了<Text>的组件，那么你必须添加RCTText的subspecs。配置完成之后执行pod install即可。
 
